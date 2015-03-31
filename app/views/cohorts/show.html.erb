@@ -1,11 +1,3 @@
-<h1>Select Cohort</h1>
-
-<ul>
-	<% @cohorts.each do |cohort| %>
-	<li><%= link_to cohort.name, cohort_path(cohort) %></li>
-	<% end %>
-</ul>
-
 <% @students.each do |student| %>
 	<h1><%= student.first_name + " " + student.last_name %></h1>
 	<ul>
