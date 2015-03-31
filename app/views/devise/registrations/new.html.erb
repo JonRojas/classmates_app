@@ -5,7 +5,7 @@
 
   <div class="field">
     <%= f.label :email %><br />
-    <%= f.email_field :email, autofocus: true %>
+    <%= f.email_field :email %>
   </div>
 
   <div class="field">
@@ -21,9 +21,53 @@
     <%= f.password_field :password_confirmation, autocomplete: "off" %>
   </div>
 
+  <div class="field">
+    <%= f.label :first_name %><br />
+    <%= f.text_field :first_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :last_name %><br />
+    <%= f.text_field :last_name %>
+  </div>
+
+  <div class="field">
+    <%= f.label :github_username %><br />
+    <%= f.text_field :github_username %>
+  </div>
+
+  <div class="field">
+    <%= f.label :twitter_handle %><br />
+    <%= f.text_field :twitter_handle %>
+  </div>
+
+  <div class="field">
+    <%= f.label :favorite_teacher %><br />
+    <%= f.text_field :favorite_teacher %>
+  </div>
+
+  <div class="field">
+    <%= f.label :guilty_pleasure %><br />
+    <%= f.text_field :guilty_pleasure %>
+  </div>
+
+  <div class="field">
+    <%= f.label :inspiration %><br />
+    <%= f.text_field :inspiration %>
+  </div>
+
+  <div class="field">
+    <%= f.label :last_cool_project_before_class %><br />
+    <%= f.text_field :cool_project %>
+  </div>
+
   <div class="actions">
     <%= f.submit "Sign up" %>
   </div>
 <% end %>
+
+
+
+
 
 <%= render "devise/shared/links" %>
