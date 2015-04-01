@@ -6,14 +6,39 @@
 	<% end %>
 </ul>
 
+
+
 <% @students.each do |student| %>
-	<h1><%= student.first_name + " " + student.last_name %></h1>
-	<ul>
-		<li>Twitter handle: <%= student.twitter_handle %></li>
-		<li>Github Username: <%= student.github_username %></li>
-		<li>Who is your favorite teacher: <%= student.favorite_teacher %></li>
-		<li>What is your guilty pleasure: <%= student.guilty_pleasure %></li>
-		<li>Who has inspired you: <%= student.inspiration %></li>
-		<li>What was your last cool project before class: <%= student.cool_project %></li>
-	</ul>
+
+<div class='content'>
+
+	<div class='detail-box'>
+
+		<h1 class='title'><%= student.first_name + " " + student.last_name %></h1>
+		
+			<div class='detail teacher'>	
+				<h2>Who is your favorite teacher:</h2><p> <%= student.favorite_teacher %></p>
+			</div>
+
+			<div class='detail teacher'>
+				<h2>What is your guilty pleasure: </h2><p> <%= student.guilty_pleasure %></p>
+			</div>
+
+			<div class='detail inspiration'>
+				<h2>Who has inspired you: </h2><p><%= student.inspiration %></p>
+			</div>
+
+			<div class='detail project'>
+				<h2>What was your last cool project before class: </h2><p><%= student.cool_project %>
+			</div>
+
+	</div>
+
+
+	<div class='profile-box'>
+		<p>Twitter Handle: <%= student.twitter_handle %></p>
+		<p>Github Username: <%= student.github_username %></p>
+	</div>
+	
+</div>
 <% end %>
