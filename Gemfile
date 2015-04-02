@@ -46,3 +46,5 @@ end
 gem 'devise'
 
 gem 'pry-rails'
+
+gem 'rails_12factor'
