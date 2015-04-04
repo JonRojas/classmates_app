@@ -1,0 +1,8 @@
+html {
+  box-model: border-box;
+}
+
+h1 {
+  font-family: sans-serif;
+  margin-bottom: 3px;
+}
