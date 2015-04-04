@@ -40,7 +40,7 @@ before_filter :configure_sign_up_params, only: [:create]
 
   # You can put the params you want to permit in the empty array.
   def configure_sign_up_params
-    devise_parameter_sanitizer.for(:sign_up) << [:first_name, :last_name, :favorite_teacher, :guilty_pleasure, :inspiration, :cool_project, :github_username, :twitter_handle]
+    devise_parameter_sanitizer.for(:sign_up) << [:first_name, :last_name, :favorite_teacher, :guilty_pleasure, :inspiration, :cool_project, :github_username, :twitter_handle, :image]
   end
 
   # You can put the params you want to permit in the empty array.
