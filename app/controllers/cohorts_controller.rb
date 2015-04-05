@@ -9,6 +9,7 @@ class CohortsController < ApplicationController
 		@students = User.all
 	end
 
-
+	def create
+	end
 
 end
