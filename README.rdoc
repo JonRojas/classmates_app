@@ -1,8 +1,8 @@
 == README
 
-##User Story:
+# User Story:
 
-##Technologies Used: 
+# Technologies Used: 
 
 * [devise](https://rubygems.org/gems/devise)
 
