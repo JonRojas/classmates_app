@@ -2,7 +2,8 @@ html {
   box-model: border-box;
 }
 
-h1 {
+.home {
   font-family: sans-serif;
+  text-transform:none;
   margin-bottom: 3px;
 }
